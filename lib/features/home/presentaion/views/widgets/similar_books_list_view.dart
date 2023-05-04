@@ -1,14 +1,16 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'custom_book_image.dart';
 
-class FeaturedBoxListView extends StatelessWidget {
-  const FeaturedBoxListView({super.key});
+class SimilarBooksListView extends StatelessWidget {
+  const SimilarBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
+      height: MediaQuery.of(context).size.height * .19,
       child: ListView.separated(
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
@@ -21,5 +23,6 @@ class FeaturedBoxListView extends StatelessWidget {
         },
       ),
     );
+    ;
   }
 }

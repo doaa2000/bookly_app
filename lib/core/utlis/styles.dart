@@ -14,4 +14,11 @@ class Styles {
     fontFamily: 'gt',
     fontWeight: FontWeight.w600,
   );
+  static const text18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
+
+  static const text30 =
+      TextStyle(fontSize: 30, fontWeight: FontWeight.w600, fontFamily: 'gt');
 }

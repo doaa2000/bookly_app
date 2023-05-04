@@ -29,16 +29,17 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   font_awesome_flutter: ^10.4.0
+  go_router: ^7.0.0
   google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  get: ^4.6.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -65,8 +66,5 @@ flutter:
     - family: gt
       fonts:
         - asset: assets\fonts\GTSectra-Regular.ttf
-       
-    
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
