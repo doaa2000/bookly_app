@@ -12,6 +12,7 @@ import 'core/utlis/app_routers.dart';
 import 'features/home/presentaion/manager/newest_books_cubit/newest_books_cubit.dart';
 
 void main() {
+  setUpServiceLocator();
   runApp(const MyApp());
 }
 
@@ -26,11 +27,11 @@ class MyApp extends StatelessWidget {
         BlocProvider(
             create: (context) => FeaturedBooksCubit(
                   getIt.get<HomeRepoImpl>(),
-                )),
-        BlocProvider(
-            create: (context) => NewestBooksCubit(
-                  getIt.get<HomeRepoImpl>(),
-                ))
+                )..FetchFeaturedBooks()),
+        // BlocProvider(
+        //     create: (context) => NewestBooksCubit(
+        //           getIt.get<HomeRepoImpl>(),
+        //         ))
       ],
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
